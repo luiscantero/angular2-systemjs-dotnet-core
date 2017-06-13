@@ -10,7 +10,7 @@ var core_1 = require("@angular/core");
 require("./rxjs-extensions");
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = "Angular 2 Test";
+        this.title = "Angular 4 Test";
     }
     return AppComponent;
 }());
