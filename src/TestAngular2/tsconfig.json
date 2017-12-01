@@ -9,7 +9,7 @@
     "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
-	"noStrictGenericChecks": true,
+    "noStrictGenericChecks": true,
     "baseUrl": "./",
     "lib": [ "es6", "dom" ]
   },
