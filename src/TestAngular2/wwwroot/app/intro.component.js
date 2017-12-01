@@ -7,17 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var IntroComponent = (function () {
+var IntroComponent = /** @class */ (function () {
     function IntroComponent() {
     }
+    IntroComponent = __decorate([
+        core_1.Component({
+            selector: 'my-intro',
+            templateUrl: 'app/intro.component.html',
+            styleUrls: ['app/intro.component.css'],
+        })
+    ], IntroComponent);
     return IntroComponent;
 }());
-IntroComponent = __decorate([
-    core_1.Component({
-        selector: 'my-intro',
-        templateUrl: 'app/intro.component.html',
-        styleUrls: ['app/intro.component.css'],
-    })
-], IntroComponent);
 exports.IntroComponent = IntroComponent;
 //# sourceMappingURL=intro.component.js.map

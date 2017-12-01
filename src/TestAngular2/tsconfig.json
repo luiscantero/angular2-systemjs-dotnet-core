@@ -9,11 +9,11 @@
     "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
+	"noStrictGenericChecks": true,
     "baseUrl": "./",
     "lib": [ "es6", "dom" ]
   },
   "exclude": [
-    "node_modules",
     "wwwroot/node_modules"
   ]
 }

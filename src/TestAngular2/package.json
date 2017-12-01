@@ -13,21 +13,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@angular/common": "~5.0.3",
-    "@angular/compiler": "~5.0.3",
-    "@angular/core": "~5.0.3",
-    "@angular/forms": "~5.0.3",
-    "@angular/http": "~5.0.3",
-    "@angular/platform-browser": "~5.0.3",
-    "@angular/platform-browser-dynamic": "~5.0.3",
-    "@angular/router": "~5.0.3",
-
+    "@angular/common": "~5.0.4",
+    "@angular/compiler": "~5.0.4",
+    "@angular/core": "~5.0.4",
+    "@angular/forms": "~5.0.4",
+    "@angular/http": "~5.0.4",
+    "@angular/platform-browser": "~5.0.4",
+    "@angular/platform-browser-dynamic": "~5.0.4",
+    "@angular/router": "~5.0.4",
     "systemjs": "0.20.19",
     "core-js": "^2.5.1",
     "reflect-metadata": "^0.1.10",
     "rxjs": "5.5.2",
     "zone.js": "^0.8.18",
-
     "angular-in-memory-web-api": "~0.5.1",
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1"
@@ -35,19 +33,17 @@
   "devDependencies": {
     "concurrently": "^3.5.1",
     "lite-server": "^2.3.0",
-    "typescript": "^2.6.1",
+    "typescript": "^2.6.2",
     "@types/core-js": "^0.9.43",
     "@types/node": "^8.0.53",
-
     "tslint": "^5.8.0",
-
     "gulp": "^3.9.1",
     "async": "^2.6.0",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-typescript": "^3.2.3",
     "gulp-uglify": "^3.0.0",
-    "pump": "^1.0.3"
+    "pump": "^2.0.0"
   },
   "repository": {}
 }

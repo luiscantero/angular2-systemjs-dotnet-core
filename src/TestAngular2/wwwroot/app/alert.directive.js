@@ -10,30 +10,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AlertOnClickDirective = (function () {
+var AlertOnClickDirective = /** @class */ (function () {
     function AlertOnClickDirective(el) {
         this.el = el.nativeElement;
     }
     AlertOnClickDirective.prototype.OnClick = function () {
         alert('Clicked: ' + this.alertOnClick + "\n" + this.el.textContent);
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], AlertOnClickDirective.prototype, "alertOnClick", void 0);
+    __decorate([
+        core_1.HostListener('click'),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], AlertOnClickDirective.prototype, "OnClick", null);
+    AlertOnClickDirective = __decorate([
+        core_1.Directive({
+            selector: "[alertOnClick]",
+        }),
+        __metadata("design:paramtypes", [core_1.ElementRef])
+    ], AlertOnClickDirective);
     return AlertOnClickDirective;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], AlertOnClickDirective.prototype, "alertOnClick", void 0);
-__decorate([
-    core_1.HostListener('click'),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], AlertOnClickDirective.prototype, "OnClick", null);
-AlertOnClickDirective = __decorate([
-    core_1.Directive({
-        selector: "[alertOnClick]",
-    }),
-    __metadata("design:paramtypes", [core_1.ElementRef])
-], AlertOnClickDirective);
 exports.AlertOnClickDirective = AlertOnClickDirective;
 //# sourceMappingURL=alert.directive.js.map

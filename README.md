@@ -1,6 +1,6 @@
-# angular4-systemjs-dotnet-core
+# angular5-systemjs-dotnet-core
 ## Description
-* Visual Studio 2017 ASP.NET Core project to demo Angular4 using systemjs.
+* Visual Studio 2017 ASP.NET Core project to demo Angular 5 using systemjs.
 
 ## Notes
 * Supports running in Visual Studio and debugging using breakpoints, etc.
@@ -8,7 +8,7 @@
 * Supports running from the command line using `npm start`.
 
 ## Reference
-* [Angular4](https://angular.io/)
+* [Angular 5](https://angular.io/)
 * [systemjs](https://github.com/systemjs/systemjs)
 
 ### License

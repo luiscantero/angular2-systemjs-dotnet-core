@@ -13,7 +13,7 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var author_model_1 = require("./author.model");
 var author_service_1 = require("./author.service");
-var AboutComponent = (function () {
+var AboutComponent = /** @class */ (function () {
     function AboutComponent(router, authorService) {
         this.router = router;
         this.authorService = authorService;
@@ -48,17 +48,17 @@ var AboutComponent = (function () {
     AboutComponent.prototype.event2 = function () {
         alert("Event 2");
     };
+    AboutComponent = __decorate([
+        core_1.Component({
+            selector: 'my-about',
+            templateUrl: 'app/about.component.html',
+            styleUrls: ['app/about.component.css'],
+            providers: [author_service_1.AuthorService],
+        }),
+        __metadata("design:paramtypes", [router_1.Router,
+            author_service_1.AuthorService])
+    ], AboutComponent);
     return AboutComponent;
 }());
-AboutComponent = __decorate([
-    core_1.Component({
-        selector: 'my-about',
-        templateUrl: 'app/about.component.html',
-        styleUrls: ['app/about.component.css'],
-        providers: [author_service_1.AuthorService],
-    }),
-    __metadata("design:paramtypes", [router_1.Router,
-        author_service_1.AuthorService])
-], AboutComponent);
 exports.AboutComponent = AboutComponent;
 //# sourceMappingURL=about.component.js.map

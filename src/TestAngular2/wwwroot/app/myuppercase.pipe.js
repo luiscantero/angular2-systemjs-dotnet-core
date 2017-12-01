@@ -7,16 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var MyUppercasePipe = (function () {
+var MyUppercasePipe = /** @class */ (function () {
     function MyUppercasePipe() {
     }
     MyUppercasePipe.prototype.transform = function (value) {
         return value.toUpperCase();
     };
+    MyUppercasePipe = __decorate([
+        core_1.Pipe({ name: 'myUppercase' })
+    ], MyUppercasePipe);
     return MyUppercasePipe;
 }());
-MyUppercasePipe = __decorate([
-    core_1.Pipe({ name: 'myUppercase' })
-], MyUppercasePipe);
 exports.MyUppercasePipe = MyUppercasePipe;
 //# sourceMappingURL=myuppercase.pipe.js.map

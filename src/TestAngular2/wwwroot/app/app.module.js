@@ -20,33 +20,33 @@ var nestme_component_1 = require("./nestme.component");
 var alert_directive_1 = require("./alert.directive");
 var author_search_component_1 = require("./author-search.component");
 var app_routing_1 = require("./app.routing");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule,
+                forms_2.ReactiveFormsModule,
+                http_1.HttpModule,
+                app_routing_1.routing,
+            ],
+            declarations: [
+                app_component_1.AppComponent,
+                intro_component_1.IntroComponent,
+                about_component_1.AboutComponent,
+                author_details_component_1.AuthorDetailsComponent,
+                myuppercase_pipe_1.MyUppercasePipe,
+                nestme_component_1.NestmeComponent,
+                alert_directive_1.AlertOnClickDirective,
+                author_search_component_1.AuthorSearchComponent,
+            ],
+            providers: [],
+            bootstrap: [app_component_1.AppComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            forms_1.FormsModule,
-            forms_2.ReactiveFormsModule,
-            http_1.HttpModule,
-            app_routing_1.routing,
-        ],
-        declarations: [
-            app_component_1.AppComponent,
-            intro_component_1.IntroComponent,
-            about_component_1.AboutComponent,
-            author_details_component_1.AuthorDetailsComponent,
-            myuppercase_pipe_1.MyUppercasePipe,
-            nestme_component_1.NestmeComponent,
-            alert_directive_1.AlertOnClickDirective,
-            author_search_component_1.AuthorSearchComponent,
-        ],
-        providers: [],
-        bootstrap: [app_component_1.AppComponent]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

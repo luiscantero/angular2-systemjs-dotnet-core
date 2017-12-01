@@ -10,29 +10,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var NestmeComponent = (function () {
+var NestmeComponent = /** @class */ (function () {
     function NestmeComponent() {
         this.sendHello = new core_1.EventEmitter();
     }
     NestmeComponent.prototype.sayHello = function () {
         this.sendHello.emit("Hello " + this.myName);
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], NestmeComponent.prototype, "myName", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", Object)
+    ], NestmeComponent.prototype, "sendHello", void 0);
+    NestmeComponent = __decorate([
+        core_1.Component({
+            selector: 'nest-me',
+            templateUrl: 'app/nestme.component.html',
+            styleUrls: ['app/nestme.component.css'],
+        })
+    ], NestmeComponent);
     return NestmeComponent;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], NestmeComponent.prototype, "myName", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Object)
-], NestmeComponent.prototype, "sendHello", void 0);
-NestmeComponent = __decorate([
-    core_1.Component({
-        selector: 'nest-me',
-        templateUrl: 'app/nestme.component.html',
-        styleUrls: ['app/nestme.component.css'],
-    })
-], NestmeComponent);
 exports.NestmeComponent = NestmeComponent;
 //# sourceMappingURL=nestme.component.js.map

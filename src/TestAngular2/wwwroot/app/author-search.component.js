@@ -15,7 +15,7 @@ var router_1 = require("@angular/router");
 var Observable_1 = require("rxjs/Observable");
 var Subject_1 = require("rxjs/Subject");
 var author_search_service_1 = require("./author-search.service");
-var AuthorSearchComponent = (function () {
+var AuthorSearchComponent = /** @class */ (function () {
     function AuthorSearchComponent(authorSearchService, router) {
         this.authorSearchService = authorSearchService;
         this.router = router;
@@ -32,7 +32,9 @@ var AuthorSearchComponent = (function () {
             .debounceTime(300) // Wait 300 ms after input finished.
             .distinctUntilChanged() // Ignore if same as previous.
             .switchMap(function (term) { return term // Switch to new observable each time.
+            // Return http search observable.
             ? _this.authorSearchService.search(term)
+            // or empty observable if no search term.
             : Observable_1.Observable.of([]); })
             .catch(function (error) {
             // Todo: Real error handling.
@@ -43,10 +45,12 @@ var AuthorSearchComponent = (function () {
             .debounceTime(300) // Wait 300 ms after input finished.
             .distinctUntilChanged() // Ignore if same as previous.
             .switchMap(function (term) { return term // Switch to new observable each time.
+            // Return search observable.
             ? (function (term) {
                 _this.allTerms.splice(0, 0, term); // Push to beginning.
                 return Observable_1.Observable.of(_this.allTerms);
             })(term)
+            // or empty observable if no search term.
             : Observable_1.Observable.of([]); })
             .catch(function (error) {
             // Todo: Real error handling.
@@ -59,16 +63,16 @@ var AuthorSearchComponent = (function () {
         var link = ['/details', author.name];
         this.router.navigate(link);
     };
+    AuthorSearchComponent = __decorate([
+        core_1.Component({
+            selector: 'author-search',
+            templateUrl: 'app/author-search.component.html',
+            providers: [author_search_service_1.AuthorSearchService]
+        }),
+        __metadata("design:paramtypes", [author_search_service_1.AuthorSearchService,
+            router_1.Router])
+    ], AuthorSearchComponent);
     return AuthorSearchComponent;
 }());
-AuthorSearchComponent = __decorate([
-    core_1.Component({
-        selector: 'author-search',
-        templateUrl: 'app/author-search.component.html',
-        providers: [author_search_service_1.AuthorSearchService]
-    }),
-    __metadata("design:paramtypes", [author_search_service_1.AuthorSearchService,
-        router_1.Router])
-], AuthorSearchComponent);
 exports.AuthorSearchComponent = AuthorSearchComponent;
 //# sourceMappingURL=author-search.component.js.map

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Author = (function () {
+var Author = /** @class */ (function () {
     function Author(name, age) {
         this.name = name;
         this.age = age;

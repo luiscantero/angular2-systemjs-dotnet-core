@@ -13,7 +13,7 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var author_model_1 = require("./author.model");
 var author_service_1 = require("./author.service");
-var AuthorDetailsComponent = (function () {
+var AuthorDetailsComponent = /** @class */ (function () {
     function AuthorDetailsComponent(route, authorService) {
         this.route = route;
         this.authorService = authorService;
@@ -34,17 +34,17 @@ var AuthorDetailsComponent = (function () {
     AuthorDetailsComponent.prototype.ngOnDestroy = function () {
         this.sub.unsubscribe();
     };
+    AuthorDetailsComponent = __decorate([
+        core_1.Component({
+            selector: 'author-details',
+            templateUrl: 'app/author-details.component.html',
+            styleUrls: ['app/author-details.component.css'],
+            providers: [author_service_1.AuthorService],
+        }),
+        __metadata("design:paramtypes", [router_1.ActivatedRoute,
+            author_service_1.AuthorService])
+    ], AuthorDetailsComponent);
     return AuthorDetailsComponent;
 }());
-AuthorDetailsComponent = __decorate([
-    core_1.Component({
-        selector: 'author-details',
-        templateUrl: 'app/author-details.component.html',
-        styleUrls: ['app/author-details.component.css'],
-        providers: [author_service_1.AuthorService],
-    }),
-    __metadata("design:paramtypes", [router_1.ActivatedRoute,
-        author_service_1.AuthorService])
-], AuthorDetailsComponent);
 exports.AuthorDetailsComponent = AuthorDetailsComponent;
 //# sourceMappingURL=author-details.component.js.map

@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/toPromise");
-var AuthorService = (function () {
+var AuthorService = /** @class */ (function () {
     function AuthorService(http) {
         this.http = http;
         this.authorsUrl = '/mock-authors.json'; // URL to web api.
@@ -80,11 +80,11 @@ var AuthorService = (function () {
         }) // 2 s.
             .then(function () { return _this.getAuthors(); });
     };
+    AuthorService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], AuthorService);
     return AuthorService;
 }());
-AuthorService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], AuthorService);
 exports.AuthorService = AuthorService;
 //# sourceMappingURL=author.service.js.map
